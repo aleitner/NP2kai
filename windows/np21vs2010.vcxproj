@@ -424,6 +424,7 @@
     <ClCompile Include="..\diskimage\fd\fdd_xdf.c" />
     <ClCompile Include="..\diskimage\img_strres.c" />
     <ClCompile Include="..\fdd\diskdrv.c" />
+    <ClCompile Include="..\fdd\fdd_live.c" />
     <ClCompile Include="..\fdd\fdd_mtr.c" />
     <ClCompile Include="..\fdd\newdisk.c" />
     <ClCompile Include="..\fdd\sxsi.c" />
@@ -1140,6 +1141,7 @@
     <ClInclude Include="..\diskimage\img_strres.h" />
     <ClInclude Include="..\fdd\d88head.h" />
     <ClInclude Include="..\fdd\diskdrv.h" />
+    <ClInclude Include="..\fdd\fdd_live.h" />
     <ClInclude Include="..\fdd\fdd_mtr.h" />
     <ClInclude Include="..\fdd\hdd_vhd.h" />
     <ClInclude Include="..\fdd\hdd_vpc.h" />

@@ -57,6 +57,7 @@
 #include <wab/wab.h>
 #include <wab/cirrus_vga_extern.h>
 #endif	/* defined(SUPPORT_WAB) */
+#include <fdd/fdd_live.h>
 
 extern void sdlaudio_callback(void *userdata, unsigned char *stream, int len);
 
@@ -1696,6 +1697,7 @@ void retro_init (void)
 
 void retro_deinit(void)
 {
+   fddlive_shutdown();
    np2_end();
 }
 
@@ -1888,7 +1890,8 @@ bool retro_unserialize(const void *data, size_t size)
    char	*path;
    FILEH fh;
 
-   if(size <= 0) {
+   // a state can't match a real disk, and its writes would land on whatever is in the drive
+   if(size <= 0 || fddlive_enable) {
       return false;
    }
    path = file_getcd(RETRO_NP2_TEMPSTATE);

@@ -5,6 +5,7 @@
 
 #include <compiler.h>
 #include <fdd/diskdrv.h>
+#include <fdd/fdd_live.h>
 #include <dosio.h>
 #include <sysmng.h>
 #include <pccore.h>
@@ -291,6 +292,7 @@ void diskdrv_callback(void)
 {
 	REG8 drv;
 
+	fddlive_callback();
 	for (drv = 0; drv < 4; drv++)
 	{
 		if (diskdrv_delay[drv])

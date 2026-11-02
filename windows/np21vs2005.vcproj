@@ -657,6 +657,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\fdd\fdd_live.c"
+					>
+				</File>
+				<File
 					RelativePath="..\fdd\fdd_mtr.c"
 					>
 				</File>
@@ -2104,6 +2108,10 @@
 				</File>
 				<File
 					RelativePath="..\fdd\fdd_d88.h"
+					>
+				</File>
+				<File
+					RelativePath="..\fdd\fdd_live.h"
 					>
 				</File>
 				<File

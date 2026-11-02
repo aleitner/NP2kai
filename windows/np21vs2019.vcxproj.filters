@@ -528,6 +528,9 @@
     <ClCompile Include="..\fdd\diskdrv.c">
       <Filter>ソース ファイル\fdd</Filter>
     </ClCompile>
+    <ClCompile Include="..\fdd\fdd_live.c">
+      <Filter>ソース ファイル\fdd</Filter>
+    </ClCompile>
     <ClCompile Include="..\fdd\fdd_mtr.c">
       <Filter>ソース ファイル\fdd</Filter>
     </ClCompile>
@@ -2574,6 +2577,9 @@
       <Filter>ヘッダー ファイル\fdd</Filter>
     </ClInclude>
     <ClInclude Include="..\fdd\diskdrv.h">
+      <Filter>ヘッダー ファイル\fdd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fdd\fdd_live.h">
       <Filter>ヘッダー ファイル\fdd</Filter>
     </ClInclude>
     <ClInclude Include="..\fdd\fdd_mtr.h">
