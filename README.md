@@ -519,6 +519,13 @@ np2kai fdilocation/aaa.fdi hdilocation/bbb.hdi isolocation/ccc.iso
 
 .m3u files can written in .cmd file.<br>
 Then, You can FDs+HD and FDs+CD contents file.
+
+Add -l to the commandline when .hdm images are served from a real drive,<br>
+```
+np2kai -l mountpoint/FD1.hdm mountpoint/FD2.hdm
+```
+Reads then run in the background so sound and video keep going, and a file that goes away<br>
+counts as the disk coming out. Save states can't be loaded in this mode.<br>
 </div></details>
 
 <details><summary>
